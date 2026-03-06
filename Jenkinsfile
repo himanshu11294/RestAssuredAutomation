@@ -19,7 +19,20 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                sh 'mvn -B clean test'
+                                sh '''
+                                        if [ -x /opt/homebrew/bin/mvn ]; then
+                                            MVN_CMD=/opt/homebrew/bin/mvn
+                                        elif [ -x /usr/local/bin/mvn ]; then
+                                            MVN_CMD=/usr/local/bin/mvn
+                                        elif command -v mvn >/dev/null 2>&1; then
+                                            MVN_CMD=$(command -v mvn)
+                                        else
+                                            echo "Maven executable not found."
+                                            exit 127
+                                        fi
+
+                                        "$MVN_CMD" -B clean test
+                                '''
             }
         }
     }
