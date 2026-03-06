@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-06T23:43:26 IST" name="REST Assured Automation Suite" finished-at="2026-03-06T23:43:32 IST" duration-ms="5958">
+    <groups>
+    </groups>
+    <test started-at="2026-03-06T23:43:26 IST" name="User API Tests" finished-at="2026-03-06T23:43:32 IST" duration-ms="5958">
+      <class name="api.test.UserTest">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.UserTest@3b96c42e]" started-at="2026-03-06T23:43:26 IST" name="setupData" finished-at="2026-03-06T23:43:26 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="testPostUser()[pri:0, instance:api.test.UserTest@3b96c42e]" started-at="2026-03-06T23:43:26 IST" name="testPostUser" finished-at="2026-03-06T23:43:28 IST" duration-ms="1861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testUpdateUser()[pri:1, instance:api.test.UserTest@3b96c42e]" started-at="2026-03-06T23:43:28 IST" name="testUpdateUser" finished-at="2026-03-06T23:43:31 IST" duration-ms="2722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+        <test-method signature="testReadUser()[pri:2, instance:api.test.UserTest@3b96c42e]" started-at="2026-03-06T23:43:31 IST" name="testReadUser" finished-at="2026-03-06T23:43:32 IST" duration-ms="1252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadUser -->
+      </class> <!-- api.test.UserTest -->
+    </test> <!-- User API Tests -->
+  </suite> <!-- REST Assured Automation Suite -->
+</testng-results>
